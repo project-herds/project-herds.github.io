@@ -296,6 +296,76 @@
             opacity: 0.8;
         }
 
+        /* --- Stili per il Pop-up Social Migliorato --- */
+        .social-popup {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+            border: 2px solid rgba(212, 175, 55, 0.3);
+            z-index: 1100;
+            min-width: 200px;
+            
+            /* Animazione di comparsa */
+            opacity: 0;
+            transform: translateY(10px);
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+
+        .social-popup.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .social-popup .social-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 8px;
+            border-radius: 10px;
+            transition: all 0.2s ease;
+            text-decoration: none;
+            color: #2d3e50;
+            margin-bottom: 8px;
+        }
+
+        .social-popup .social-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .social-popup .social-item:hover {
+            background: rgba(212, 175, 55, 0.1);
+            transform: translateX(5px);
+        }
+
+        .social-popup .social-item svg {
+            width: 20px;
+            height: 20px;
+            fill: #2d3e50;
+            transition: fill 0.2s ease;
+            flex-shrink: 0;
+        }
+
+        .social-popup .social-item:hover svg {
+            fill: #d4af37;
+        }
+
+        .social-popup .social-item .social-text {
+            font-size: 14px;
+            font-weight: 500;
+            color: #2d3e50;
+            white-space: nowrap;
+        }
+
+        .social-popup .social-item:hover .social-text {
+            color: #d4af37;
+        }
+
+        /* Responsive Design */
+        /* Hero Section Responsive */
+
         /* Animations */
         .fade-in {
             animation: fadeInUp 0.8s ease-out;
@@ -326,7 +396,7 @@
     <nav>
         <div class="nav-container">
             <div class="logo-section">
-                <img src="images/logo_proof.png" alt="Logo HERDS" class="logo-image">
+                <img src="images/logo.jpeg" alt="Logo HERDS" class="logo-image">
                 <div class="logo">HERDS</div>
             </div>
             <ul class="nav-links">
@@ -343,11 +413,10 @@
     🚧 Questo sito è attualmente in costruzione. Torna presto per scoprire tutte le novità!
     </div>
 
-
         <div class="container">
             <div class="hero fade-in">
                 <h1>HERDS</h1>
-                <p>Strategie e ruolo dell’allevamento nelle dinamiche economiche delle società protostoriche del Mediterraneo centrale</p>
+                <p>Strategie e ruolo dell'allevamento nelle dinamiche economiche delle società protostoriche del Mediterraneo centrale</p>
 
                 <br>
 
@@ -369,10 +438,10 @@ multidisciplinare e innovativo per indagare le trasformazioni economiche e socia
 in Italia tra Bronzo medio e prima età del Ferro (ca 1700 – 725 a.C.). In questo periodo si
 affermano comunità demograficamente ampie e insediamenti stabili, si sviluppano reti di
 scambio e interazioni a breve e lungo raggio per la circolazione di materie prime, oggetti,
-tecniche e ideologie. Trasformazioni molto significative si registrano anche nell’economia
-primaria, nelle modalità di allevamento con strategie di mobilità o di stabulazione, nell’ uso
-di prodotti derivati (lana, latte, pellame), nell’affermazione di possibili aplogruppi
-differenziati o “razze specializzate”.
+tecniche e ideologie. Trasformazioni molto significative si registrano anche nell'economia
+primaria, nelle modalità di allevamento con strategie di mobilità o di stabulazione, nell' uso
+di prodotti derivati (lana, latte, pellame), nell'affermazione di possibili aplogruppi
+differenziati o "razze specializzate".
 Per indagare tali aspetti il progetto HERDS, a partire da studi archeologici e
 archeozoologici, ha integrato la ricerca attraverso analisi biomolecolari, ZooMS e aDNA,
 finora poco applicate per i resti animali in età protostorica. Queste metodologie di ricerca,
@@ -383,33 +452,33 @@ Realizzando una consistente ricerca multidisciplinare che integri la conoscenza
 archeologica e archeozoologica con le archeologie biomolecolari e di genetica antica, il
 progetto Herds con di aumentare sensibilmente il livello di conoscenza su un ampio
 campo di indagine territoriale e cronologico riguardante le comunità italiane.
-Un obiettivo importante, pertinente alle pratiche di allevamento e all’organizzazione e
+Un obiettivo importante, pertinente alle pratiche di allevamento e all'organizzazione e
 gestione di mandrie e soprattutto delle greggi, è quello di indagare con analisi ZooMS,
 isotopiche di Sr e O e del Dna antico, la composizione delle greggi e la mobilità degli
 animali domestici. Tali metodologie forniscono informazioni a riguardo di pratiche pastorali
 di transumanza o alpeggio o in relazione al trasferimento di capi esogeni. Inoltre, è
 
-possibile precisare l’appartenenza specifica dei caprovini ad Ovis aries o Capra hircus, nei
+possibile precisare l'appartenenza specifica dei caprovini ad Ovis aries o Capra hircus, nei
 casi in cui le analisi morfometriche non consentano una determinazione specifica, e anche
 di individuare il sesso degli animali. La gestione da parte delle comunità umane di greggi e
 mandrie può essere invece compresa tramite le analisi del C che possono indicare
-l’integrazione del cibo degli animali con piante C4, riferibili per esempio al miglio.
+l'integrazione del cibo degli animali con piante C4, riferibili per esempio al miglio.
 Correlabile alle pratiche di pascolo è un altro campo di indagine attivato con il progetto
-HERDS per ricostruire l’uso delle risorse pascolive attraverso studi pollinici e la
+HERDS per ricostruire l'uso delle risorse pascolive attraverso studi pollinici e la
 realizzazione di carotaggi in aree montane vocate, al fine di analizzare sedimenti e spore
 di funghi coprofili indicativi di tali pratiche.
 Mediante il DNA antico il progetto Herds ha inteso esplorare anche la possibilità di definire
-l’esistenza di aplogruppi differenziati o di “razze” selezionate all’interno di un’areale vasto
+l'esistenza di aplogruppi differenziati o di "razze" selezionate all'interno di un'areale vasto
 quale quello analizzato, anche in relazione alle diverse fasce cronologiche. Tale obiettivo
 ovviamente deve tenere conto anche delle difficoltà correlate allo stato di conservazione
 del DNA.
 Un ulteriore obiettivo è stato quello di riconoscere attraverso analisi chimiche dei prodotti
 organici, applicate a contenitori ceramici tradizionalmente riferiti su base empirica alla
-produzione di latticini, l’effettivo utilizzo di tali contenitori e conseguentemente acquisire
+produzione di latticini, l'effettivo utilizzo di tali contenitori e conseguentemente acquisire
 informazioni verificabili sulla produzione di prodotti derivati che possono aver avuto un
 peso significativo sulla disponibilità di risorse alimentari delle comunità protostoriche. Tale
-aspetto è indagato anche attraverso l’analisi delle tracce rilevabili su resti dentari umani
-tramite analisi proteomiche per identificare proteine del latte e distinguere l’uso di latte
+aspetto è indagato anche attraverso l'analisi delle tracce rilevabili su resti dentari umani
+tramite analisi proteomiche per identificare proteine del latte e distinguere l'uso di latte
 bovino o ovicaprino.
 
 
@@ -497,55 +566,179 @@ bovino o ovicaprino.
             </div>
 
             <div class="card fade-in">
-                <h2>Membri del progetto</h2>
+                <h2>Unità di Ricerca</h2>
 
-                <h3>Università Sapienza</h3>
+                <h3>Università La Sapienza - Dipartimento di Scienze dell'Antichità</h3>
                 <div class="investigators-grid">
                     <div class="investigator-card">
                         <img src="https://www.lincei.it/sites/default/files/2024/3180_Cardarelli_edited.jpg" alt="Andrea Cardarelli" class="investigator-image">
                         <h3>Andrea Cardarelli</h3>
-                        <p>Università di Roma La Sapienza</p>
                         <p><strong>Principal Investigator</strong></p>
+
+                        <div class="investigator-links" style="display: none;">
+
+                            <a href="https://www.researchgate.net/profile/Andrea-Cardarelli" target="_blank" class="social-item">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/ResearchGate_icon_SVG.svg" alt="ResearchGate" style="width: 24px; height: 24px;">
+                                <span class="social-text">ResearchGate</span>
+                            </a>
+                            <a href="https://uniroma1.academia.edu/AndreaCardarelli" target="_blank" class="social-item">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Academia-logo-2021.svg" alt="Academia.edu" style="width: 24px; height: 24px;">
+                                <span class="social-text">Academia.edu</span>
+                            </a>
+                            <a href="https://phd.uniroma1.it/web/ANDREA-CARDARELLI_nC1559_IT.aspx" target="_blank" class="social-item">
+                               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link" viewBox="0 0 16 16">
+                                <path d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9q-.13 0-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"/>
+                                <path d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4 4 0 0 1-.82 1H12a3 3 0 1 0 0-6z"/>
+                                </svg>
+                                <span class="social-text">Sito Web</span>
+                            </a>
+                        </div>
                     </div>
+
                     
                     <div class="investigator-card">
                         <img src="https://phd.uniroma1.it/dottorati/cartellaProfili/f6076247-00a5-40e5-bc51-51230643b98c.jpg" alt="Giulia Recchia" class="investigator-image">
                         <h3>Giulia Recchia</h3>
-                        <p>Università di Roma La Sapienza</p>
-                        <p><strong>Membro del progetto - Principal Investigator</strong></p>
+                        <p><strong>Principal Investigator</strong></p>
+
+                        <div class="investigator-links" style="display: none;">
+
+                            <a href="https://uniroma1.academia.edu/GiuliaRecchia" target="_blank" class="social-item">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Academia-logo-2021.svg" alt="Academia.edu" style="width: 24px; height: 24px;">
+                                <span class="social-text">Academia.edu</span>
+                            </a>
+                            <a href="https://phd.uniroma1.it/web/GIULIA-RECCHIA_nC654_IT.aspx" target="_blank" class="social-item">
+                               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link" viewBox="0 0 16 16">
+                                <path d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9q-.13 0-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"/>
+                                <path d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4 4 0 0 1-.82 1H12a3 3 0 1 0 0-6z"/>
+                                </svg>
+                                <span class="social-text">Sito Web</span>
+                            </a>
+                        </div>
                     </div>
                     
                     <div class="investigator-card">
-                        <img src="images/placeholder_person.png" alt="Claudia Minniti" class="investigator-image">
-                        <h3>Claudia Minniti</h3>
-                        <p>Università del Salento/ Università di Roma La Sapienza</p>
-                        <p><strong>Membro del progetto</strong></p>
+                        <img src="images/foto Elena 2020.jpg" alt="Elena Maini" class="investigator-image">
+                        <h3>Elena Maini</h3>
+                        <p><strong>Ricercatore</strong></p>
                     </div>
                     
                     <div class="investigator-card">
                         <img src="https://www.ispc.cnr.it/wp-content/uploads/2023/03/Lorenzo-Cardarelli_cnr_ispc-300x300.png" alt="Lorenzo Cardarelli" class="investigator-image">
                         <h3>Lorenzo Cardarelli</h3>
-                        <p>Università di Roma La Sapienza</p>
                         <p><strong>Assegnista di Ricerca</strong></p>
+
+                        <div class="investigator-links" style="display: none;">
+
+
+                            <a href="https://orcid.org/0000-0002-2436-9967" target="_blank" class="social-item">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/0/06/ORCID_iD.svg" alt="ORCID" style="width: 24px; height: 24px;">
+                                <span class="social-text">ORCID</span>
+                            </a>
+                            <a href="https://www.researchgate.net/profile/Lorenzo-Cardarelli-2?ev=hdr_xprf" target="_blank" class="social-item">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/ResearchGate_icon_SVG.svg" alt="ResearchGate" style="width: 24px; height: 24px;">
+                                <span class="social-text">ResearchGate</span>
+                            </a>
+                            <a href="https://uniroma1.academia.edu/LorenzoCardarelli" target="_blank" class="social-item">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Academia-logo-2021.svg" alt="Academia.edu" style="width: 24px; height: 24px;">
+                                <span class="social-text">Academia.edu</span>
+                            </a>
+                            <a href="https://lrncrd.github.io/" target="_blank" class="social-item">
+                               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link" viewBox="0 0 16 16">
+                                <path d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9q-.13 0-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"/>
+                                <path d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4 4 0 0 1-.82 1H12a3 3 0 1 0 0-6z"/>
+                                </svg>
+                                <span class="social-text">Sito Web</span>
+                            </a>
+                            <a href="https://github.com/lrncrd" target="_blank" class="social-item">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" style="width: 24px; height: 24px;">
+                                <span class="social-text">GitHub</span>
+                            </a>
+                        </div>
+
                     </div>
                     
                     <div class="investigator-card">
                         <img src="images/placeholder_person.png" alt="Melissa Vilmercati" class="investigator-image">
                         <h3>Melissa Vilmercati</h3>
-                        <p>Università di Roma La Sapienza</p>
                         <p><strong>Assegnista di Ricerca</strong></p>
                     </div>
 
                     <div class="investigator-card">
-                        <img src="images/placeholder_person.png" alt="Matteo Cianfoni" class="investigator-image">
+                        <img src="images/cianfoni.jpeg" alt="Matteo Cianfoni" class="investigator-image">
                         <h3>Matteo Cianfoni</h3>
-                        <p>Università di Roma La Sapienza</p>
                         <p><strong>Dottorando di Ricerca</strong></p>
+                    </div>                    
+                </div>
+
+                <br>
+                
+                <p style="font-style: italic; opacity: 0.8;">Collaboratori esterni - Dipartimento di Scienze della Terra</p>
+
+                <div class="investigators-grid">
+                    <div class="investigator-card">
+                        <img src="images/placeholder_person.png" alt="Luigi Dallai" class="investigator-image">
+                        <h3>Luigi Dallai</h3>
+                        <p><strong>Professore Associato</strong></p>
+                    </div>   
+                    <div class="investigator-card">
+                        <img src="images/placeholder_person.png" alt="Eduardo Di Marcantonio" class="investigator-image">
+                        <h3>Eduardo Di Marcantonio</h3>
+                        <p><strong>Dottorando di Ricerca</strong></p>
+                    </div>  
+                </div>
+
+                <br>
+                <h3>Università del Salento - Dipartimento di Beni Culturali</h3>
+                <div class="investigators-grid">
+                    <div class="investigator-card">
+                        <img src="images/fotoClaudia.jpg" alt="Claudia Minniti" class="investigator-image">
+                        <h3>Claudia Minniti</h3>
+                        <p><strong>Membro del progetto</strong></p>
                     </div>
-
-
+                    
+                    <div class="investigator-card">
+                        <img src="images/Claudia Abatino.jpeg" alt="Claudia Abatino" class="investigator-image">
+                        <h3>Claudia Abatino</h3>
+                        <p><strong>Assegnista di Ricerca</strong></p>
+                    </div>
+                    
+                    <div class="investigator-card">
+                        <img src="images/Potenza.jpg" alt="Alberto Potenza" class="investigator-image">
+                        <h3>Alberto Potenza</h3>
+                        <p><strong>Assegnista di Ricerca</strong></p>
+                    </div>
+                    
+                    <div class="investigator-card">
+                        <img src="images/Giorgia.Vincenti.jpg" alt="Giorgia Vicenti" class="investigator-image">
+                        <h3>Giorgia Vicenti</h3>
+                        <p><strong>Assegnista di Ricerca</strong></p>
+                    </div>
+                    
+                    <div class="investigator-card">
+                        <img src="images/Giulia-Patrizi.jpg" alt="Giulia Patrizi" class="investigator-image">
+                        <h3>Giulia Patrizi</h3>
+                        <p style="font-style: italic; opacity: 0.8;">Collaboratore</p>
+                    </div>
+                </div>
+                <br>
+                <h3>Università di Bologna - Dipartimento di Storia Culture Civiltà</h3>
+                <div class="investigators-grid">
+                    <div class="investigator-card">
+                        <img src="images/Curci.jpg" alt="Antonio Curci" class="investigator-image">
+                        <h3>Antonio Curci</h3>
+                        <p><strong>Membro del progetto</strong></p>
+                    </div>
+                    
+                    <div class="investigator-card">
+                        <img src="images/flo pic-2025.jpg" alt="Florencia Debandi" class="investigator-image">
+                        <h3>Florencia Debandi</h3>
+                        <p><strong>Assegnista di Ricerca</strong></p>
+                    </div>
                     
                 </div>
+
+
             </div>
         </div>
     </main>
@@ -594,6 +787,75 @@ bovino o ovicaprino.
                 observer.observe(el);
             });
         });
+    </script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        let activePopup = null;
+        let hideTimer = null;
+
+        // Seleziona tutte le card dei ricercatori
+        const investigatorCards = document.querySelectorAll('.investigator-card');
+
+        investigatorCards.forEach(card => {
+            const linksContainer = card.querySelector('.investigator-links');
+            
+            // Prosegui solo se la card ha effettivamente dei link da mostrare
+            if (!linksContainer || !linksContainer.innerHTML.trim()) {
+                return;
+            }
+
+            // --- Evento: il mouse entra nella card ---
+            card.addEventListener('mouseenter', (event) => {
+                // Se c'è un timer per nascondere, lo annulla
+                if (hideTimer) {
+                    clearTimeout(hideTimer);
+                    hideTimer = null;
+                }
+
+                // Rimuove un pop-up precedente se esiste
+                if (activePopup) {
+                    activePopup.remove();
+                }
+
+                // Crea il nuovo pop-up
+                activePopup = document.createElement('div');
+                activePopup.className = 'social-popup';
+                activePopup.innerHTML = linksContainer.innerHTML;
+                document.body.appendChild(activePopup);
+
+                // Posiziona il pop-up sotto la card
+                const cardRect = card.getBoundingClientRect();
+                const popupRect = activePopup.getBoundingClientRect();
+
+                activePopup.style.top = `${cardRect.bottom + window.scrollY + 8}px`; // 8px sotto la card
+                activePopup.style.left = `${cardRect.left + window.scrollX + (cardRect.width / 2) - (popupRect.width / 2)}px`;
+
+                // Rende il pop-up visibile con una piccola animazione
+                setTimeout(() => activePopup.classList.add('visible'), 10);
+
+                // Eventi per mantenere il pop-up visibile se il mouse ci passa sopra
+                activePopup.addEventListener('mouseenter', () => {
+                    if (hideTimer) clearTimeout(hideTimer);
+                });
+                activePopup.addEventListener('mouseleave', () => {
+                    if (activePopup) activePopup.remove();
+                });
+            });
+
+            // --- Evento: il mouse esce dalla card ---
+            card.addEventListener('mouseleave', () => {
+                // Avvia un timer per nascondere il pop-up.
+                // Questo dà all'utente il tempo di spostare il cursore sul pop-up.
+                hideTimer = setTimeout(() => {
+                    if (activePopup) {
+                        activePopup.remove();
+                        activePopup = null;
+                    }
+                }, 200); // 200 millisecondi di ritardo
+            });
+        });
+    });
     </script>
 </body>
 </html>
